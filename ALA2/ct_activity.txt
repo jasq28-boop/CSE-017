@@ -1,0 +1,10 @@
+1.First we would open one of the files
+2.Then we would have a method that creates a new class for each new ProductID that is read
+  This method would take in the ProductID and calculate the revenue based on the quantity and price per until
+3. A running total of each type of Product ID will be kept
+4. We will have an ArrayList of all the unique ProductIDs, and before creating a new object, we will check if that ProductID already
+exist
+5. We will implement a try-catch-finally block to open the files from the North, South, and West one at a time
+6. Once the file is open, we will close it once hasNext() is false
+7. If one of the lines isn't the correct format or doesn't have any information, it will throw an exception, and skip and continue until there is no more lines
+to read in the file. The finally block will close the file. 
