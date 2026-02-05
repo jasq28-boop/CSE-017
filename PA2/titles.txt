@@ -1,0 +1,11 @@
+Book,A-111111,Java Programming,2021,false,null,Horstmann,456,0137673620
+Magazine,A-111222,Wired,2020,false,null,1,12
+Magazine,B-444444,Nature,2026,false,null,1,1
+Movie,D-555555,A Beautiful Mind,2001,false,null,Ron Howard,135,Drama
+Book,B-222222,The Alchemist,2014,true,01/19/2026,Paulo Coelho,208,0062315007
+Book,C-333333,Encyclopedia of Computer Science,2008,false,null,Henderson,580,0816063826
+Movie,B-666666,Harry Potter I,2001,false,null,Chris Columbus,152,Fantasy
+Book,D-777777,The Mathematics Lover's Companion,2017,true,02/02/2026,Scheinerman,274,0300255393
+Magazine,C-111111,The Economist,2022,false,null,12,8
+Movie,A-555555,Avatar: Fire and Ash,2025,true,01/28/2026,James Cameron,195,Fantasy
+Movie,C-222222,Inception,2010,true,02/19/2026,Christopher Nolan,184,Sci-Fi

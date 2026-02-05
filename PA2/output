@@ -1,0 +1,103 @@
+Test case 1: Creating an empty library
+Lehigh University Library created with 0 titles
+
+Test case 2: Adding new titles to the library
+Error in line 3: Invalid type of title (Book|Movie|Magazine): Show
+Error in line 4: Not enough or too much items
+Error in line 8: Invalid ISBN: 062315007
+Error in line 16: Invalid year (1900 - 2026): 1865
+Error in line 17: Invalid call number (must be [A-Z]-dddddd): A-555
+Lehigh University Library has 12 titles
+
+Test case 3: Viewing all the titles in the library
+Book            A-111111  	Java Programming                   	2021 	Horstmann           	456  	0137673620
+Magazine        A-111222  	Wired                              	2020 	                    	1    	12        
+Magazine        B-444444  	Nature                             	2026 	                    	1    	1         
+Movie           D-555555  	A Beautiful Mind                   	2001 	Ron Howard          	135  	Drama     
+Book            B-222222  	The Alchemist                      	2014 	Paulo Coelho        	208  	0062315007
+Book            C-333333  	Encyclopedia of Computer Science   	2008 	Henderson           	580  	0816063826
+Movie           B-666666  	Harry Potter I                     	2001 	Chris Columbus      	152  	Fantasy   
+Book            D-777777  	The Mathematics Lover's Companion  	2017 	Scheinerman         	274  	0300255393
+Magazine        C-111111  	The Economist                      	2022 	                    	12   	8         
+Magazine        D-222222  	IEEE Spectrum                      	2019 	                    	2    	6         
+Movie           A-555555  	Avatar: Fire and Ash               	2025 	James Cameron       	195  	Fantasy   
+Movie           C-222222  	Inception                          	2010 	Christopher Nolan   	184  	Sci-Fi    
+
+Test case 4: Finding a title in the library (fail)
+No title found with call number B-111111
+
+Test case 5: Finding a title in the library (success)
+Title found:
+Magazine        D-222222  	IEEE Spectrum                      	2019 	                    	2    	6         
+
+Test case 6: Removing a title from the library (fail)
+Title with call number D-222227 not found
+
+Test case 7: Removing a title from the library (success)
+Title with call number D-222222 found and removed successfully
+Lehigh University Library has 11 titles
+Book            A-111111  	Java Programming                   	2021 	Horstmann           	456  	0137673620
+Magazine        A-111222  	Wired                              	2020 	                    	1    	12        
+Magazine        B-444444  	Nature                             	2026 	                    	1    	1         
+Movie           D-555555  	A Beautiful Mind                   	2001 	Ron Howard          	135  	Drama     
+Book            B-222222  	The Alchemist                      	2014 	Paulo Coelho        	208  	0062315007
+Book            C-333333  	Encyclopedia of Computer Science   	2008 	Henderson           	580  	0816063826
+Movie           B-666666  	Harry Potter I                     	2001 	Chris Columbus      	152  	Fantasy   
+Book            D-777777  	The Mathematics Lover's Companion  	2017 	Scheinerman         	274  	0300255393
+Magazine        C-111111  	The Economist                      	2022 	                    	12   	8         
+Movie           A-555555  	Avatar: Fire and Ash               	2025 	James Cameron       	195  	Fantasy   
+Movie           C-222222  	Inception                          	2010 	Christopher Nolan   	184  	Sci-Fi    
+
+Test case 8: Checking out a title from the library (fail)
+Title with call number B-111112 not found
+
+Test case 9: Checking out titles from the library (success)
+Title with call number B-222222 found and checked out successfully
+Title with call number D-777777 not found or already checked out
+Title with call number A-555555 found and checked out successfully
+
+Test case 10: Viewing the list of checked out titles
+Movie           D-555555  	A Beautiful Mind                   	2001 	Ron Howard          	135  	Drama     
+Book            B-222222  	The Alchemist                      	2014 	Paulo Coelho        	208  	0062315007
+Book            D-777777  	The Mathematics Lover's Companion  	2017 	Scheinerman         	274  	0300255393
+Movie           A-555555  	Avatar: Fire and Ash               	2025 	James Cameron       	195  	Fantasy   
+Movie           C-222222  	Inception                          	2010 	Christopher Nolan   	184  	Sci-Fi    
+5 title(s) are checked out of the library
+Test case 11: Displaying the total late fees for overdue titles
+3  title(s) overdue.
+Total late fees = $9.50
+
+Test case 11: Returning a title to the library (fail)
+Title with call number B-666666 not found or is not checked out
+
+Test case 12: Returning a title to the library (success)
+Title with call number D-555555 checked in successfully
+
+Test case 14: saving the titles to the file
+11 titles saved to the file
+
+Test case 15: Sorting the library titles by year
+Movie           D-555555  	A Beautiful Mind                   	2001 	Ron Howard          	135  	Drama     
+Movie           B-666666  	Harry Potter I                     	2001 	Chris Columbus      	152  	Fantasy   
+Book            C-333333  	Encyclopedia of Computer Science   	2008 	Henderson           	580  	0816063826
+Movie           C-222222  	Inception                          	2010 	Christopher Nolan   	184  	Sci-Fi    
+Book            B-222222  	The Alchemist                      	2014 	Paulo Coelho        	208  	0062315007
+Book            D-777777  	The Mathematics Lover's Companion  	2017 	Scheinerman         	274  	0300255393
+Magazine        A-111222  	Wired                              	2020 	                    	1    	12        
+Book            A-111111  	Java Programming                   	2021 	Horstmann           	456  	0137673620
+Magazine        C-111111  	The Economist                      	2022 	                    	12   	8         
+Movie           A-555555  	Avatar: Fire and Ash               	2025 	James Cameron       	195  	Fantasy   
+Magazine        B-444444  	Nature                             	2026 	                    	1    	1         
+
+Test case 16: loading the titles from the text file
+Lehigh University Library has 11 titles
+
+Test case 18: Viewing the list of checked out titles
+Book            B-222222  	The Alchemist                      	2014 	Paulo Coelho        	208  	0062315007
+Book            D-777777  	The Mathematics Lover's Companion  	2017 	Scheinerman         	274  	0300255393
+Movie           A-555555  	Avatar: Fire and Ash               	2025 	James Cameron       	195  	Fantasy   
+Movie           C-222222  	Inception                          	2010 	Christopher Nolan   	184  	Sci-Fi    
+4 title(s) are checked out of the library
+Test case 11: Displaying the total late fees for overdue titles
+2  title(s) overdue.
+Total late fees = $7.50
